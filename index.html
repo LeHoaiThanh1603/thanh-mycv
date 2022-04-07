@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./reposive.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./grid.css">
+  <link rel="icon" type="image/x-icon" href="./image-user/cv.jpg">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <title>My CV</title>
+</head>
+<body>
+  <div class="app">
+    <div class="music">
+      <div class="content-musci">Bạn Có muốn nghe một tí nhạc không?</div>
+      <div class="icon-hiden">
+        <i class='bx bxs-chevrons-left'></i>
+        <!-- <i class='bx bx-chevrons-right' ></i> -->
+      </div>
+      <div class="play-music">
+        <div class="music-name-song">${song.name}</div>
+        <div class="music-name-singer">${song.Singer}</div>`
+      </div>
+      <!-- input -->
+      <div class="input-control">
+        <input class="input-btn" type="range" value="0" step="1" min="0" max="100">
+        <audio id="audio" src=""></audio>
+      </div>
+      <!-- control -->
+      <div class="control">
+        <div class="btn"><i class='bx bx-repeat' ></i></div>
+        <div class="btn"><i class='bx bx-skip-previous' ></i></div>
+
+        <div class="btn togger-play playing ">
+          <i class='bx bx-play' ></i>
+          <i class='bx bx-pause'></i>
+        </div>
+
+        <div class="btn"><i class='bx bx-skip-next' ></i></div>
+        <div class="btn"><i class='bx bx-shuffle'></i></div>
+      </div>
+
+    </div>
+    <div class="grid wide container">
+      <div class="box-circle"></div>
+      <div class="box-heart"></div>
+      <div class="box-star"></div>
+      <!-- Header -->
+      <div class="info-header row background">
+        <div class="header-left col l-6 m-12 c-12">
+          <div class="content-header-left">
+            <div class="avatar"></div>
+            <div class="content">
+              <div id="name" class="content--header-name">Lê Hoài Thanh</div>
+              <div class="content--header-description">
+                <i class='bx bxs-graduation' ></i>
+                Sinh Viên
+              </div>
+              <div class="content--header-contact">
+                <a href="" class="contact-social">
+                  <div class="icon-popup facebook hide-on-mobile-tablet">FaceBook</div>
+                  <i class=' ic-fb bx bxl-facebook ' ></i>
+                </a>
+                <a href="" class="contact-social">
+                  <div class="icon-popup ins hide-on-mobile-tablet">Instagram</div>
+                  <i class='ic-ins bx bxl-instagram-alt' ></i>
+                </a>
+                <a href="" class="contact-social">
+                  <div class="icon-popup tiktok hide-on-mobile-tablet class="hide-on-mobile-tablet"">Tiktok</div>
+                  <i class='ic-tiktok bx bxl-tiktok' ></i>
+                </a>
+                <a href="" class="contact-social">
+                  <div class="icon-popup youtube hide-on-mobile-tablet">Youtube</div>
+                  <i class='ic-youtube bx bxl-youtube' ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-right col l-6 m-12 c-12">
+          <div class="row tl-mb_mb-20 ">
+            <div class="content--header-right col l-8 m-6 c-12 ">
+              <div class="content-header-name tl-mb_pl20">Email</div>
+              <div class="content-header-description tl-mb_pl20">lehoaithanhcd003@gmail.com</div>
+            </div>
+            <div class="content--header-description col l-4 m-6 c-12">
+              <div class="content-header-name tl-mb_pl20">Ngày Sinh</div>
+              <div class="content-header-description tl-mb_pl20">16/03/2001</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="content--header-right col l-8 m-6 c-12">
+              <div class="content-header-name tl-mb_pl20">Số Điện Thoại</div>
+              <div class="content-header-description tl-mb_pl20">0932557304</div>
+            </div>
+            <div class="content--header-description col l-4 m-6 c-12">
+              <div class="content-header-name tl-mb_pl20">Quê Quán</div>
+              <div class="content-header-description tl-mb_pl20">Phú Yên</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Header -->
+
+      <!-- Body -->
+      <div class="info-body tablet-flex-colums row">
+        <div class="col l-2 m-12 c-12 ">
+          <ul class="sidebar background ">
+            <li class="sidebar-item active">
+              <lord-icon  id="icon-nav" src="https://cdn.lordicon.com/eszyyflr.json"trigger="hover"">
+              </lord-icon>
+              <div class="title ">Bản Thân</div>
+            </li>
+            <li class="sidebar-item ">
+              <lord-icon id="icon-nav"  src="https://cdn.lordicon.com/wxnxiano.json" trigger="hover">
+              </lord-icon>
+              <div class="title">Học Vấn</div>
+            </li>
+            <li class="sidebar-item ">
+              <lord-icon id="icon-nav"  src="https://cdn.lordicon.com/iltqorsz.json" trigger="hover">
+              </lord-icon>
+              <div class="title">Mục Tiêu</div>
+
+            </li>
+            <li class="sidebar-item ">
+              <lord-icon id="icon-nav"  src="https://cdn.lordicon.com/lupuorrc.json" trigger="hover">
+              </lord-icon>
+              <div class="title">Sở Thích</div>
+
+
+            </li>
+          </ul>
+        </div>
+        <div class="col l-10 m-12 c-12">
+          <div class="tab-pane active content-body background mb-50">
+            <h3 class="introduce">Giới Thiệu</h3>
+            <p class="introduce-content">
+              Mình tên là Thanh, Hiện tại đang là sinh viên năm 3 của Trường Đại Học Yersin Đà Lạt và chuyên
+              nghành của mình là Công Nghệ Thông Tin.
+              <br>
+              <br>
+              Thời gian gần đây mình tình cờ biết đến trang F8, các video ở đây dạy rất tận tâm và dễ hiểu, cảm ơn anh Sơn 
+              đã tạo ra trang web này giúp bản thân mình và mọi người có cơ hội trau dồi thêm kiến thức. Sau 1 khoảng thời gian 
+              học tập tại đây, mình đã hoàn thành khóa JavaScript căn bản và sẽ tiếp tục học các khóa khác để vươn tới mục tiêu 
+              có thể thực tập và đi làm trong tương lai! 
+            </p>
+            <br>
+            <p class="color-text"> 
+              Trong quá trình tự học, đôi lúc gặp những vấn đề khiến mình cảm thấy nản chí. Vì vậy
+              mình đang cần tìm một vài người bạn "cùng tiến" hay đơn giản chỉ là kết thêm bằng hữu,
+              có cùng mục tiêu học tập nghiêm túc, không ngại giúp đỡ nhau trong quá trình học tập! 
+              Bạn nào có cùng nguyện vọng thì có thể liên hệ qua Facebook cá nhân của mình ạ!
+            </p>
+            <h3 class="introduce mt-20">Sản Phẩm Của Mình</h3>
+            <div class="row">
+              <div class="text-center col l-6 m-12 c-12">
+                <div class="project">
+                  <img src="./Project/2.png" alt="">
+                </div>
+                <span class="name-project"> Shoppe</span>
+              </div>
+              <div class="text-center col l-6 m-12 c-12">
+                <div class="project">
+                  <img src="./Project/4.png" alt="">
+                </div>
+                <span class="name-project"> Travel</span>
+              </div>
+              <div class="text-center col l-6 m-12 c-12">
+                <div class="project">
+                  <img src="./Project/5.png" alt="">
+                </div>
+                <span class="name-project"> ManchesterUnited</span>
+              </div>
+              <div class="text-center col l-6 m-12 c-12">
+                <div class="project">
+                  <img src="./Project/6.png" alt="">
+                </div>
+                <span class="name-project"> Booking</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="slider-body col l-12 m-12 c-12" style="width:100%">
+                <h3 class="introduce mt-20">Những Câu Nói Truyền Cảm Hứng</h3>
+                <!-- Slider phần này -->
+                <div class="swiper ">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide" style="background-image: linear-gradient(to right, purple, pink);">Những Câu Nói Truyền Lửa</div>
+                    <div class="swiper-slide" style="background-image: linear-gradient(to right, #c94b4b, #4b134f);">Những Câu Nói Truyền Lửa</div>
+                    <div class="swiper-slide" style="background-image: linear-gradient(to right, #e1eec3, #f05053);">Những Câu Nói Truyền Lửa</div>
+                    ...
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+                
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane content-body-education background mb-50 ">
+            <div class="introduce">Học Vấn</div>
+            <h4 class="description">Giáo Dục</h4>
+            <div class="timeline pb-20">
+              <div class="content-body-name mt-20">Trường Đại Học Yersin Đà Lạt</div>
+              <div class="content-body-title">2019</div>
+              <p class="content-body-description">Sau khi học xong cấp 3 vì mình có đam mê với máy tính nói thẳng ra 
+                là mình chơi game khá ổn nên mình đã chọn ngành học Công Nghệ Thông Tin tại một nơi có khi hậu khá là
+                dễ chịu đó là Đại Học Yersin Đà Lạt vào đầu tháng 8 năm 2019.
+                </p>
+            </div>
+            <div class="timeline-end ">
+              <div class="content-body-name">Học tại F8</div>
+              <div class="content-body-title">Đầu năm 2022 - Nay</div>
+              <p class="content-body-description mt-10">Thời gian gần đây mình biết đến F8, là do một người bạn chung lớp 
+                của mình đã chỉ mình mà mình rất thích nên đã tìm hiểu và học tập được một khoảng thời gian gần đây,
+                sau khi học ở F8 mình cảm thấy Mình được trau dồi kiến thức rất nhiều ổn hơn trước đây mình tự tìm đọc tài liệu và mình rất thích.
+            </p>
+            </div>
+            
+            <div class="introduce">Kiến Thức</div>
+            <div class="timeline">
+              <h4 class="content-body-name">HTML</h4>
+              <div class="content-body-title ">HyperText Markup Language</div>
+              <p class="content-body-description mt-10">HTML được dịch là "Ngôn ngữ đánh dấu siêu văn bản", 
+                nó được dùng để tạo ra các tài liệu hiện thị được trên trình duyệt. 
+                HTML gọi là ngôn ngữ nhưng nó không giống như các ngôn ngữ kịch bản hay 
+                ngôn ngữ lập trình (sử dụng các kịch bản để thi hành các tác vụ), 
+                ngôn ngữ đánh dấu HTML lại sử dụng các thẻ để xác định nội dung của trang.
+              </p>
+            </div>
+            <div class="timeline">
+              <h4 class="content-body-name">CSS</h4>
+              <div class="content-body-title ">Cascading Style Sheets</div>
+              <p class="content-body-description mt-10">CSS là một ngôn ngữ được sử dụng để tìm và định dạng lại các
+                phần tử được tạo ra bởi ngôn ngữ đánh dấu (HTML).
+                Nói ngắn gọn hơn là ngôn ngữ tạo phong cách cho trang web.
+              </p>
+            </div>
+            <div class=" timeline-end">
+              <h4 class="content-body-name">JS</h4>
+            <div class="content-body-title ">Javascript</div>
+            <p class="content-body-description mt-10">Javascript là một ngôn ngữ lập trình kịch bản được sử dụng rộng
+              rãi trong các ứng dụng Website và được hỗ trợ hầu như trên tất cả các trình duyệt trên cả máy tính lẫn điện thoại.
+              Nhiệm vụ của Javascript là xử lý những đối tượng HTML trên trình duyệt.Nó có thể can thiệp với các hành động như thêm
+              / xóa / sửa các thuộc tính CSS và các thẻ HTML một cách dễ dàng.
+            </p>
+            </div>
+          
+            <div class="introduce mt-20">Kỷ năng của tôi</div>
+              <div class="skill-container mt-20">
+                <div class="skill-progress html"></div>
+                <div class="skill-progress css"></div>
+                <div class="skill-progress js"></div>
+              </div>
+          </div>
+          <div class="tab-pane content-body-target background mb-50 ">
+            <div class="introduce mb-30">Mục Tiêu</div>
+            <div class="timeline">
+              <h4 class="content-body-name">Viết một trang web tĩnh</h4>
+              <div class="content-body-title ">2022 - infinite</div>
+              <p class="content-body-description mt-10">Kết hợp kiến thức HTML, CSS, JS căn bản đã học để xây dựng 1 website one page
+              </p>
+            </div>
+            <div class="timeline">
+              <h4 class="content-body-name">Hoàn thành khóa JS nâng cao</h4>
+              <div class="content-body-title ">2022 - infinite</div>
+              <p class="content-body-description mt-10">Nhận thấy việc chỉ học các kiến thức về JS căn bản là chưa đủ vì vậy mình sẽ tiếp tục tập trung học khóa
+                JS nâng cao và mục tiêu hoàn thành nó trong tháng 4.
+            </p>
+            </div>
+            <div class="timeline">
+              <h4 class="content-body-name">Hoàn thành khóa ReactJS</h4>
+              <div class="content-body-title ">2022 - infinite</div>
+              <p class="content-body-description mt-10">React là một thư viện UI phát triển tại Facebook để hỗ trợ việc xây dựng những thành phần (components)
+                UI có tính tương tác cao, có trạng thái và có thể sử dụng lại được. Mình sẽ cố gắng hoàn thành khóa học này
+                trong tháng 5.
+              </p>
+            </div>
+            <div class="timeline">
+              <h4 class="content-body-name">Học Tiếng Anh</h4>
+              <div class="content-body-title ">2022 - infinite</div>
+              <p class="content-body-description mt-10">Tiếng anh là ngôn ngữ của toàn thế giới. Trong lập trình, tiếng anh cũng đóng vai trò quan trọng không kém những kiến
+                thức về code bởi đa số các tài liệu hay thậm chí việc viết code hằng ngày của chúng ta đều phải giao tiếp với
+                Tiếng Anh. Nhận thấy khả năng Tiếng Anh hiện tại chưa được tốt và phải nghiêm túc khắc phục nên mình sẽ dành thời gian
+                hợp lý song song với việc học code để bổ sung thêm kiến thức về Tiếng Anh. Mục tiêu là có thể đọc hiểu các tài liệu
+                về Tiếng Anh chuyên ngành.
+              </p>
+            </div>
+            <div class="timeline mb-60">
+              <h4 class="content-body-name">Thực hành</h4>
+              <div class="content-body-title ">Trong quá trình học</div>
+              <p class="content-body-description mt-10">
+                Trong quá trình học, mình sẽ áp dụng những kiến thức đã học và làm các project nhỏ để rèn luyện
+                thêm kỹ năng, từ đó rút ra những kinh nghiệm và khắc phục những thiếu sót của bản thân.
+              </p>
+            </div>
+          </div>
+          <div class="tab-pane content-body-interest background mb-50">
+            <div class="introduce mb-30">Sở Thích</div>
+              <ul class="row" >
+                <li style="list-style-type: none" class="col c-12">
+                  <a href="" class="interest-item">
+                    <div class="interest-item-img">
+                      <img src="./image-interest/lqm.jpg" alt="">
+                    </div>
+                    <div class="interest-item-content">
+                      <div class="content-body-name " style="font-size: 20px; font-weight:600 ; margin-bottom: 15px;">Liên Quân Mobile</div>
+                      <p>Liên quân mobile là tựa game moba trên nền tảng di động rất phổ biến và được ưa chuộng
+                        tại Việt Nam. Tựa game này mang tính chiến thuật và giải trí cao, song cũng rất dễ gây
+                        trầm cảm .
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li style="list-style-type: none" class="mb-60">
+                  <a href="" class="interest-item">
+                    <div class="interest-item-img">
+                      <img src="./image-interest/lqm.jpg" alt="">
+                    </div>
+                    <div class="interest-item-content">
+                      <div class="content-body-name" style="font-size: 20px; font-weight:600 ; margin-bottom: 15px;">Liên Quân Mobile</div>
+                      <p>Liên quân mobile là tựa game moba trên nền tảng di động rất phổ biến và được ưa chuộng
+                        tại Việt Nam. Tựa game này mang tính chiến thuật và giải trí cao, song cũng rất dễ gây
+                        trầm cảm .
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+              </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progress__bar">
+
+    </div>
+  </div>
+
+</body>
+<script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+<script src="./main.js"></script>
+<script type="module">
+  import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  grabCursor : true ,
+  slidesPerView : 1 ,
+  spaceBetween: 3,
+  
+
+  // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+});
+  
+</script>
+</script>
+
+</html>

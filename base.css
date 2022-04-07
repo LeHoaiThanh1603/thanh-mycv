@@ -1,0 +1,270 @@
+
+
+.content-header-name{
+  font-weight: 600;
+  color: rgb(85, 84, 84);
+}
+
+.sidebar-item {
+  transition: 0.4s linear;
+}
+.sidebar-item:hover {
+  background: rgb(248, 172, 239);
+  box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px,
+    rgb(0 0 0 / 30%) 0px 30px 60px -30px,
+    rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+}
+
+#icon-nav{
+  width: 60px;
+  height: 60px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.color-text {
+  color: red;
+}
+
+.display {
+  display: none;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 20px;
+  border-left: 1.5px dotted #000;
+}
+
+.timeline:before {
+  position: absolute;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #94b1f0;
+  top: 0;
+  left: -5px;
+  z-index: 2;
+  animation: timeline 2s linear infinite;
+}
+
+@keyframes timeline {
+  0% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+.timeline:after {
+  position: absolute;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #304cfd;
+  top: 0;
+  left: -5px;
+  z-index: 2;
+}
+
+.timeline-end {
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-end:after {
+  position: absolute;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #304cfd;
+  top: 0;
+  left: -4px;
+  z-index: 2;
+}
+
+.timeline-end:before {
+  position: absolute;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #94b1f0;
+  top: 0;
+  left: -4px;
+  z-index: 2;
+  animation: timeline 2s linear infinite;
+}
+
+@keyframes timeline {
+  0% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.tab-pane {
+  display: none;
+}
+
+.sidebar-item.active {
+  background: rgb(248, 172, 239);
+}
+
+.tab-pane.active {
+  display: block;
+}
+/* Musci */
+.music {
+  z-index: 99;
+  position: fixed;
+  top: 200px;
+  right: 0;
+  padding: 20px;
+  width: 350px;
+  height: 200px;
+  background: rgba(252, 133, 133, 0.75);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.content-musci {
+  text-align: center;
+  font-size: 14px;
+}
+
+.icon-hiden {
+  font-size: 20px;
+  position: absolute;
+  left: -25px;
+  top: -5px;
+  transform: translateY(-50%);
+
+
+}
+
+.icon-hiden i {
+  background: rgba(252, 133, 133, 0.75);
+  border-radius: 50%;
+  padding:  10px;
+}
+
+.control {
+  /* margin-top: 30px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.btn {
+  font-size: 25px;
+}
+
+.togger-play {
+  font-size: 30px;
+}
+
+.togger-play i {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgb(230, 120, 120);
+}
+
+.input-btn {
+  width: 100%;
+  height: 5px;
+  color: burlywood;
+  -webkit-appearance: none;
+}
+
+.music-name-song {
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.music-name-singer {
+  text-align: center;
+  font-size: 12px;
+}
+.togger-play > i:nth-child(1) {
+  display: none;
+}
+.togger-play.playing i:nth-child(1) {
+  display: block;
+}
+.togger-play.playing i:nth-child(2) {
+  display: none;
+}
+
+.music.hidden {
+  transform: translateX(calc(100% - 20px));
+  transition: transform 0.5s ease;
+}
+
+
+.music.hidden .icon-hiden i{
+  transform : rotate(180deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  background-color: #fff;
+}
+::-webkit-scrollbar-track {
+  margin: 3px 0;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  background-color: pink;
+  background-clip: content-box;
+}
+.progress__bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width  : 100% ;
+  background:  linear-gradient(to right,#91ffbd, #fbd786, #f7797d);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
